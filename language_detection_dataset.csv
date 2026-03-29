@@ -1,0 +1,156 @@
+text,label,subcategory
+"Thank you so much for your help today, I really appreciate it!",SAFE,compliment
+You did an absolutely wonderful job on that project!,SAFE,compliment
+"I'm so proud of how far you've come, keep it up!",SAFE,compliment
+You are one of the kindest people I have ever met.,SAFE,compliment
+Great work! You really nailed it this time.,SAFE,compliment
+I love how passionate you are about this topic.,SAFE,compliment
+You always know exactly what to say to make people feel better.,SAFE,compliment
+"Your presentation was outstanding, everyone was impressed.",SAFE,compliment
+I admire your dedication and hard work every single day.,SAFE,compliment
+"You are so creative, this idea is brilliant!",SAFE,compliment
+"Don't give up, you are so close to reaching your goal!",SAFE,encouragement
+"I believe in you, you can do this!",SAFE,encouragement
+"Everyone makes mistakes, what matters is that you keep going.",SAFE,encouragement
+"You are stronger than you think, hang in there.",SAFE,encouragement
+"Things will get better, I promise. I'm here for you.",SAFE,encouragement
+"You've overcome hard things before, you'll get through this too.",SAFE,encouragement
+"Take your time, there is no rush. You've got this.",SAFE,encouragement
+I'm always here if you need someone to talk to.,SAFE,encouragement
+"Your effort is inspiring, never stop trying.",SAFE,encouragement
+Believe in yourself as much as others believe in you.,SAFE,encouragement
+"I think there's room to improve here, but you're on the right track.",SAFE,feedback
+This is a good start. Maybe try adjusting the second paragraph.,SAFE,feedback
+"I noticed a few errors, but overall this is solid work.",SAFE,feedback
+Have you considered approaching it from a different angle?,SAFE,feedback
+"The idea is great, the execution just needs a little refining.",SAFE,feedback
+"Your logic is sound, but the conclusion could be stronger.",SAFE,feedback
+I'd suggest revisiting this section to make it clearer.,SAFE,feedback
+Good effort! With a bit more practice this will be perfect.,SAFE,feedback
+"You're nearly there, just a few tweaks needed.",SAFE,feedback
+"This is much better than last time, well done!",SAFE,feedback
+Can you please pass me the salt?,SAFE,neutral
+What time does the meeting start tomorrow?,SAFE,neutral
+"I'm going to the grocery store, do you need anything?",SAFE,neutral
+"The weather is really nice today, isn't it?",SAFE,neutral
+Let me know when you're free to catch up.,SAFE,neutral
+I just finished reading a really interesting book.,SAFE,neutral
+Could you help me understand this concept better?,SAFE,neutral
+I think we should schedule a meeting to discuss this.,SAFE,neutral
+The project deadline is next Friday.,SAFE,neutral
+I'll get back to you as soon as possible.,SAFE,neutral
+I respectfully disagree with your point of view on this matter.,SAFE,disagreement
+"I see things differently, but I understand where you're coming from.",SAFE,disagreement
+"That's an interesting perspective, though I have a different opinion.",SAFE,disagreement
+"I don't think that's quite right, but let me explain my reasoning.",SAFE,disagreement
+"We may not agree on this, but I respect your stance.",SAFE,disagreement
+"I think there are some flaws in that argument, here's why.",SAFE,disagreement
+Could we revisit this? I'm not sure I agree with the conclusion.,SAFE,disagreement
+I appreciate your input but I have a different take on this.,SAFE,disagreement
+"That's not how I see it, but I'm open to discussing it further.",SAFE,disagreement
+We can agree to disagree on this one.,SAFE,disagreement
+"I'm truly sorry for what I said, it was wrong of me.",SAFE,apology
+"Please forgive me, I didn't mean to hurt you.",SAFE,apology
+"I apologize sincerely, that was out of line.",SAFE,apology
+I regret my actions and I take full responsibility.,SAFE,apology
+"I'm sorry, I should have thought before speaking.",SAFE,apology
+"Ugh, this is so frustrating, nothing is working!",MILD,frustration
+"I can't believe how long this is taking, so annoying.",MILD,frustration
+"This is honestly ridiculous, what a waste of time.",MILD,frustration
+I'm sick and tired of dealing with this every single day.,MILD,frustration
+This customer service is absolutely terrible.,MILD,frustration
+I've had it with all these stupid technical issues.,MILD,frustration
+What the heck is going on with this system?,MILD,frustration
+"This is a complete disaster, nothing went as planned.",MILD,frustration
+"I'm so done with this, it's driving me crazy.",MILD,frustration
+"This is beyond annoying, I just want it to work.",MILD,frustration
+"You're being really dumb about this, just think for a second.",MILD,mild_insult
+"That was a pretty stupid thing to do, don't you think?",MILD,mild_insult
+You're acting like a complete jerk right now.,MILD,mild_insult
+Could you stop being so annoying for once?,MILD,mild_insult
+"You're so full of yourself, it's exhausting.",MILD,mild_insult
+"Honestly, you're kind of a pain to deal with sometimes.",MILD,mild_insult
+Stop being such a crybaby and toughen up.,MILD,mild_insult
+"You never listen, it's so infuriating.",MILD,mild_insult
+"That was a dumb idea, I'm not going to sugarcoat it.",MILD,mild_insult
+"You're so lazy, you never put in any effort.",MILD,mild_insult
+"Fine. Do whatever you want, I don't care anymore.",MILD,passive_aggressive
+"Oh sure, because you always know best, don't you.",MILD,passive_aggressive
+I guess some people just don't care about others' feelings.,MILD,passive_aggressive
+"Whatever, it's not like my opinion matters anyway.",MILD,passive_aggressive
+Must be nice to never have to deal with consequences.,MILD,passive_aggressive
+I'm fine. Everything's fine. It's all absolutely fine.,MILD,passive_aggressive
+"No no, don't mind me, I'll just do everything myself.",MILD,passive_aggressive
+Thanks for the heads up... eventually.,MILD,passive_aggressive
+Oh I didn't realize my feelings were so inconvenient for you.,MILD,passive_aggressive
+"I'll just sit here quietly and be invisible, shall I?",MILD,passive_aggressive
+"You are a complete and utter idiot, how are you even functioning?",ABUSIVE,insult
+You are the most pathetic loser I have ever had the misfortune of meeting.,ABUSIVE,insult
+What a worthless piece of garbage you are.,ABUSIVE,insult
+"You are absolutely disgusting, no one wants you around.",ABUSIVE,insult
+"You are brain dead, there is no other explanation for this.",ABUSIVE,insult
+"You are a failure at everything you do, it's actually impressive.",ABUSIVE,insult
+"Nobody likes you, you are insufferable and repulsive.",ABUSIVE,insult
+"You are the worst person I've ever met, bar none.",ABUSIVE,insult
+You are a coward and a liar and everyone knows it.,ABUSIVE,insult
+"You are utterly useless, a waste of space and air.",ABUSIVE,insult
+"Go f*** yourself, I'm done with your garbage.",ABUSIVE,profanity
+"You piece of s***, you have no idea what you're talking about.",ABUSIVE,profanity
+Shut your stupid mouth before I shut it for you.,ABUSIVE,profanity
+You're a dumb b**** who doesn't know anything.,ABUSIVE,profanity
+"Get the hell out of my sight, you absolute moron.",ABUSIVE,profanity
+You're a complete a**hole and everyone hates you.,ABUSIVE,profanity
+"What the f*** is wrong with you, are you insane?",ABUSIVE,profanity
+"Go to hell, you worthless piece of trash.",ABUSIVE,profanity
+You're a lying sack of crap and nobody believes you.,ABUSIVE,profanity
+"I can't stand you, you're the worst kind of scum.",ABUSIVE,profanity
+I will ruin your life and make sure everyone knows what you did.,ABUSIVE,harassment
+"You better watch yourself, I know people who can make things difficult for you.",ABUSIVE,harassment
+"I'm going to make sure you lose your job, your reputation, everything.",ABUSIVE,harassment
+"Nobody wants you here, why don't you just disappear forever.",ABUSIVE,harassment
+"I'll expose you for the fraud you are, just you wait.",ABUSIVE,harassment
+Keep ignoring me and see what happens to you.,ABUSIVE,harassment
+You think you can just block me? I'll find other ways to reach you.,ABUSIVE,harassment
+You are going to regret every single thing you've done to me.,ABUSIVE,harassment
+I'll make sure your family knows what kind of person you really are.,ABUSIVE,harassment
+I'm not going to stop until you're completely destroyed.,ABUSIVE,harassment
+"Watch your back, because I'm coming for you.",ABUSIVE,threat
+You better do what I say or you'll regret it.,ABUSIVE,threat
+I swear I will hurt you if you cross me again.,ABUSIVE,threat
+You're dead to me and soon you'll be dead to everyone else.,ABUSIVE,threat
+Keep talking and see what I do to you.,ABUSIVE,threat
+I'll find you no matter where you hide.,ABUSIVE,threat
+One more word and you'll be sorry.,ABUSIVE,threat
+I know where you live and I'm not afraid to show up.,ABUSIVE,threat
+"You'll pay for this, I promise you that.",ABUSIVE,threat
+"This isn't a warning, this is a promise — you're finished.",ABUSIVE,threat
+"You are such a loser, everyone laughs at you behind your back.",ABUSIVE,bullying
+"No wonder you have no friends, you're impossible to like.",ABUSIVE,bullying
+"You should just give up, you'll never be good enough.",ABUSIVE,bullying
+"Everyone thinks you're a joke, they just don't say it to your face.",ABUSIVE,bullying
+"You're so ugly and stupid, it's no surprise people avoid you.",ABUSIVE,bullying
+"Kill yourself, no one would even notice you were gone.",ABUSIVE,bullying
+You are worthless and the world would be better without you.,ABUSIVE,bullying
+"Just quit already, you were never meant to succeed.",ABUSIVE,bullying
+"You cry about everything like a little baby, it's embarrassing.",ABUSIVE,bullying
+"Nobody wants you here, do everyone a favor and leave.",ABUSIVE,bullying
+"People like you don't belong in this country, go back to where you came from.",ABUSIVE,hate_speech
+Your kind has always been the root of every problem in society.,ABUSIVE,hate_speech
+Women are too emotional to ever be in positions of power.,ABUSIVE,hate_speech
+Disabled people are just a burden on the rest of society.,ABUSIVE,hate_speech
+Gay people are an abomination and should be ashamed of themselves.,ABUSIVE,hate_speech
+"People of that religion are all terrorists, simple as that.",ABUSIVE,hate_speech
+That entire race is inferior and history has proven it.,ABUSIVE,hate_speech
+Immigrants are stealing jobs and destroying our culture.,ABUSIVE,hate_speech
+Trans people are mentally ill and should not be allowed in public.,ABUSIVE,hate_speech
+Poor people are poor because they're lazy and deserve it.,ABUSIVE,hate_speech
+"This is the dumbest post I've ever seen, delete your account.",ABUSIVE,toxic_online
+"No one asked for your opinion, stay in your lane loser.",ABUSIVE,toxic_online
+Ratio. You're irrelevant and your take is garbage.,ABUSIVE,toxic_online
+"You're so cringe, please log off and never come back.",ABUSIVE,toxic_online
+This person is the reason comment sections should be banned.,ABUSIVE,toxic_online
+Imagine being this stupid and still posting publicly.,ABUSIVE,toxic_online
+"Touch grass, you pathetic basement-dwelling loser.",ABUSIVE,toxic_online
+"Your page is a joke, just like you.",ABUSIVE,toxic_online
+I can't believe someone as dumb as you has internet access.,ABUSIVE,toxic_online
+"Go back to living under your rock, nobody wants your input.",ABUSIVE,toxic_online
