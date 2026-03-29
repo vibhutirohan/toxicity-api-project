@@ -2,14 +2,13 @@ import os
 import joblib
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from typing import Dict
 
 MODEL_PATH = os.path.join("saved_models", "abuse_model.joblib")
 
 app = FastAPI(
     title="GuardAI Abuse Detection API",
-    description="API for detecting SAFE, MILD, or ABUSIVE messages",
-    version="1.0.0"
+    description="API for checking whether a title and description are good or bad",
+    version="2.0.0"
 )
 
 if not os.path.exists(MODEL_PATH):
@@ -17,46 +16,49 @@ if not os.path.exists(MODEL_PATH):
 
 model = joblib.load(MODEL_PATH)
 
+
 class MessageRequest(BaseModel):
-    message: str = Field(..., example="Thank you for helping me today!")
+    title: str = Field(..., example="Community update")
+    description: str = Field(..., example="Thank you for helping me today!")
+
 
 class MessageResponse(BaseModel):
-    message: str
-    label: str
-    confidence: float
-    scores: Dict[str, float]
+    status: str = Field(..., example="good")
+
 
 @app.get("/")
 def root():
     return {"message": "GuardAI API is running"}
 
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
 
+
 @app.post("/predict", response_model=MessageResponse)
 def predict(payload: MessageRequest):
     try:
-        if not payload.message.strip():
-            raise HTTPException(status_code=400, detail="Message cannot be empty")
+        title = payload.title.strip()
+        description = payload.description.strip()
 
-        prediction = model.predict([payload.message])[0]
-        probabilities = model.predict_proba([payload.message])[0]
-        classes = model.classes_
+        if not title and not description:
+            raise HTTPException(
+                status_code=400,
+                detail="Both title and description cannot be empty"
+            )
 
-        score_map = {
-            cls: round(float(prob) * 100, 2)
-            for cls, prob in zip(classes, probabilities)
-        }
+        # Combine title + description into one text input for the model
+        full_text = f"{title} {description}".strip()
 
-        confidence = round(max(probabilities) * 100, 2)
+        prediction = str(model.predict([full_text])[0]).upper()
 
-        return MessageResponse(
-            message=payload.message,
-            label=prediction,
-            confidence=confidence,
-            scores=score_map
-        )
+        # SAFE -> good
+        # MILD / ABUSIVE -> bad
+        if prediction == "SAFE":
+            return MessageResponse(status="good")
+        else:
+            return MessageResponse(status="bad")
 
     except HTTPException:
         raise
