@@ -1,0 +1,4 @@
+label,tested_rows_with_200,correct_predictions,accuracy_percent
+ABUSIVE,70,67,95.71
+MILD,30,27,90.0
+SAFE,55,49,89.09
