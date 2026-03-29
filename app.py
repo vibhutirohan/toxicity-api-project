@@ -51,10 +51,11 @@ def predict(payload: MessageRequest):
         # Combine title + description into one text input for the model
         full_text = f"{title} {description}".strip()
 
-        prediction = str(model.predict([full_text])[0]).upper()
+        # Predict using the existing model
+        prediction = str(model.predict([full_text])[0]).strip().upper()
 
         # SAFE -> good
-        # MILD / ABUSIVE -> bad
+        # everything else -> bad
         if prediction == "SAFE":
             return MessageResponse(status="good")
         else:
